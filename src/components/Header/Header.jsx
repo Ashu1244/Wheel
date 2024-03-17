@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container,Row,Col}  from 'reactstrap';
+import { Container,Row,Button}  from 'reactstrap';
 import { Link,NavLink } from "react-router-dom";
-import "../../styles/header.css";
 
-const navLinks=[
+import logo from '../../assets/images/home.jpg';
+import "./header.css";
+
+const nav__links=[
   {
  path:"/home",
  display:"Home"
@@ -13,143 +15,68 @@ const navLinks=[
   display:"About"
  },
  {
-  path:"/cars",
-  display:"Cars"
+  path:"/tours",
+  display:"Tours"
  },
 
- {
-  path:"/blog",
-  display:"Blog"
- },
- {
-   path:"/contact",
-   display:"Contact"
-  },
   
 ]
 
 const Header = () => {
   return <header className="header">
-    {/* header top*/}
-
-    <div className="header__top">
-  <Container>
- <Row>
-<Col lg="6" md= "6" sm="6">
-  <div className="header__top__left">
-<span>Need Help?</span>
-<span className='header__top__help'>
-<i class="ri-phone-fill"></i>+91-9122171513
-</span>
-
-  </div>
-
-</Col>
-<Col lg="6" md= "6" sm="6">
-<div className="header__top__right d-flex 
-align-items-center justify-content-end gap-3">
-<Link to ="#" className='d-flex align-items
--center gap-1'>
-  <i class="ri-login-circle-line"></i>Login
-</Link>
-<Link to ="#">
-  <i class="ri-user-fill"></i>Register
-</Link>
-</div>
-</Col>
-
- </Row>
-
-  </Container>
-
-    </div>
-
-    {/* -----header middle---------*/}
-
-<div className="header__middle">
-<Container>
-<Row>
-  <Col lg ="4" md="3" sm="4">
-    <div className='logo'>
-      <h1><Link to = '/home' className='d-flex align-items
-      -center gap-3'>
-      <i class="ri-police-car-fill"></i>
-      <span> MNNIT Rent Car <br/> Service</span>
-      </Link></h1>
- </div>
-  </Col>
-  <Col lg= "3" md="3" sm="4">
-    <div className="header__location d-flex 
-    align-items-center gap-2">
-      <span><i class="ri-earth-fill"></i></span>
-      <div className="header__location-content">
-        <h4>India</h4>
-        <h6>Prayagraj City,India</h6>
-      </div>
-    </div>
-  </Col>
-
-  <Col lg= "3" md="3" sm="4">
-    <div className="header__location d-flex
-    align-items-center">
-      <span><i class="ri-time-fill"></i></span>
-      <div className="header__location-content">
-        <h4>Monday to Friday</h4>
-        <h6>10am to 6pm</h6>
-      </div>
-    </div>
-  </Col>
-
-  <Col lg="2" md="3" sm="0" className='d-flex 
-  align-items-center justify-content-end'>
-    <button className="header__btn btn ">
-      <Link to = "/contact">
-      <i class="ri-phone-line"></i>Request a call
-      </Link>
-    </button>
-  </Col>
-</Row>
-
-</Container>
-
-
-</div>
+  
+  
 
 
       {/*---main navigation----*/}
-<div className="main__navbar">
 <Container>
-  <div className="navigation__wrapper d-flex align
+  <Row>
+  <div className="nav__wrapper d-flex align
   -items-center justify-content-between">
-    <span className='mobile__menu'>
-    <i class="ri-menu-line"></i>
-    </span>
+    {/*----logo---- */}
 
-    <div className="navigation">
-      <div className="menu">
+    <div className="logo">
+      <img src = {logo} alt=""/>
+  
+        </div>
+
+
+      {/*Menu start--------- */}
+      <div className="navigation">
+      <ul className="menu d-flex align-items-center gap-5">
         {
-          navLinks.map((item,index)=>(
-            <NavLink to={item.path} className={
-              (navClass)=>
-              navClass.isActive ? "nav__active nav__item":
-              "nav__item"
-            }  key={index}>{item.display}</NavLink>
+          nav__links.map((item,index)=>(
+            <li className='nav__item' key= {index}>
+            <NavLink to={item.path} className={navClass=>
+            navClass.isActive ? "active__link":
+            ""
+          } 
+            > {item.display}
+            </NavLink>
+            </li>
           ))
         }
-
-      </div>
+        </ul>
     </div>
-    <div className="nav__right">
-      <div className="search__box">
-        <input type="text" placeholder='Search' />
-        <span><i class="ri-search-line"></i>
-        </span>
-      </div>
+
+    <div className="nav__right d-flex align-items-
+    center gap-4">
+      <div className="nav__btns d-flex align-items-center gap-4">
+        <Button className='btn secondary__btn'>
+          <Link to ="/login">Login</Link>
+        </Button>
+        <Button className='btn primary__btn'>
+          <Link to ="/register">Register</Link>
+        </Button>
+</div>
+ <span className="mobile__menu">
+ <i class="ri-menu-line"></i>
+ </span>
     </div>
   </div>
+  </Row>
 </Container>
 
-</div>
 
 
 
