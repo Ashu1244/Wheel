@@ -37,3 +37,19 @@ color:  var(--secondary-color);
     padding-top: 2rem;
     
 }
+.services__subtitle{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ee6e6e;
+    font-family: cursive;
+}
+.services__title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.featured__tour-title{
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: cursive;
+    color: rgb(144, 153, 74);
+}
