@@ -20,7 +20,7 @@ const nav__links=[
  },
 
   
-]
+];
 
 const Header = () => {
   return <header className="header">

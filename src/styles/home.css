@@ -53,3 +53,63 @@ color:  var(--secondary-color);
     font-family: cursive;
     color: rgb(144, 153, 74);
 }
+
+.experience__content h2{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 800;
+    }
+
+.experience__content p{
+    font-size: 1.1rem;
+    color: rgb(19, 18, 20);
+    margin-top: 1rem;
+    text-decoration: dotted;
+}
+.counter__wrapper{
+    margin-top: 2.5rem;
+}
+
+.counter__box span{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 131, 10);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.counter__box h6{
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+    color: rgba(16, 8, 239, 0.71);
+}
+.experience__img img{
+    width: 90%;
+}
+
+.gallery__title{
+    font-size: 2.3rem;
+    margin-top: 2.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: rgb(106, 82, 4);
+    font-weight: 800;
+}
+
+.masonry__img{
+    transition: .3s;
+}
+.masonry__img:hover{
+    transform: scale(1.1);
+}
+
+.testinomial__title{
+    font-size: 2.3rem;
+    margin-top: 1rem ;
+}
