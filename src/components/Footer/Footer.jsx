@@ -1,8 +1,8 @@
 import React from 'react';
 import './footer.css';
 import { Container,Row,Col,ListGroup,ListGroupItem } from 'reactstrap';
- import {Link} from 'react-router-dom';
- import logo from "../../assets/images/logo.png";
+ import {Link,NavLink} from 'react-router-dom';
+ import logo from "../../assets/images/user.png";
  const quick__links=[
     {
    path:"/home",
@@ -39,7 +39,7 @@ import { Container,Row,Col,ListGroup,ListGroupItem } from 'reactstrap';
 
 
 const Footer = () => {
-    const year= newDate().getFullYear()
+    const year= new Date().getFullYear()
   return (
    <footer>
     <Container>
