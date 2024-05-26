@@ -12,6 +12,7 @@
     margin-bottom: 0;
 
 }
+
 nav__item a{
     text-decoration: none;
     color: var(--heading-color);
@@ -25,6 +26,21 @@ nav__item a{
 .nav__item a.active__link{
     color: var(--secondary-color);
 }
+
+.btn.primary__btn.btn.btn-secondary {
+    background-color: yellow; /* Blue background color */
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.btn.secondary__btn.btn.btn-secondary {
+    background-color: yellow; /* Blue background color */
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
 .mobile__menu{
     font-size: 1.3rem;
     color: var(--heading-color);
