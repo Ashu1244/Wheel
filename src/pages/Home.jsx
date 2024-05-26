@@ -178,6 +178,7 @@ const Home = () => {
 
 {/*testinomial   section end */}
 <Newsletter/>
+{/* Footer here */}
 <Footer/>
 
 
