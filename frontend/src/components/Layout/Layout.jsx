@@ -1,17 +1,24 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Header from '../Header/Header';
 
 import Routers from '../../routers/Routers';
+import Footer from '../Footer/Footer';
 
 const Layout = () => {
   return (
-  <Fragment>
+    <>
+  
     <Header/>
-    <div>
-        <Routers/>
-    </div>
     
-  </Fragment>
+        <Routers/>
+    
+    
+
+    <Footer/>
+    
+    
+  
+  </>
   );
 };
 

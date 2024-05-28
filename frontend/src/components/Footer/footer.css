@@ -1,11 +1,11 @@
 
 .footer{
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 .footer .logo img{
     width: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .footer .logo p{
     color: var(--text-color);
@@ -28,4 +28,9 @@
 
 .footer__quick_links h6 span i{
     font-size: 1.1rem;
+}
+.copyright{
+    color: rgba(250, 8, 28, 0.913);
+    font-size: 1rem;
+    text-decoration:solid;
 }
