@@ -44,9 +44,11 @@ const Footer = () => {
    <footer>
     <Container>
         <Row>
+        <div className='new__div border-2px align-items-center d-flex '>
             <Col lg='3'>
                 <div className='logo'>
         <img src={logo} alt=""/>
+        
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Iste accusamus officiis vitae dicta labore, itaque nihil exercitationem alias 
@@ -70,6 +72,7 @@ const Footer = () => {
           </div>
           </div>
             </Col>
+
             <Col lg='3'>
                 <h5 className='footer__link-title'>Discover</h5>
                 <ListGroup className='footer__quick-links'>
@@ -132,8 +135,8 @@ const Footer = () => {
                     
                 </ListGroup>
             </Col>
-
-            <Col lg='12'>
+            </div>
+            <Col lg='12' className='text-center pt-5'>
                 <p className="copyright">Copyright {year}, design
                 and devoloped by Ashutosh and Daksh.All rights are reserved.</p>
             </Col>
