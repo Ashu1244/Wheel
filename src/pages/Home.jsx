@@ -14,6 +14,7 @@ import FeatureTourList from '../components/Featured-tours/FeatureTourList';
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 import Testinomials from '../components/Testinomial/Testinomials';
 import Newsletter from '../shared/Newsletter';
+import Footer from '../components/Footer/Footer';
 const Home = () => {
   return (
   <>
@@ -177,6 +178,9 @@ const Home = () => {
 
 {/*testinomial   section end */}
 <Newsletter/>
+{/* Footer here */}
+<Footer/>
+
 
 
 </> 

@@ -4,6 +4,11 @@
     height: 80px;
     line-height: 80px;
 }
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8eb6da !important;
+    --bs-btn-border-color: #6c757d;
+}
 
 .logo img{
     width: 30%;

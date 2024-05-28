@@ -1,8 +1,30 @@
 import React from 'react';
 import './footer.css';
+<<<<<<< HEAD
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logo.png";
+=======
+import { Container,Row,Col,ListGroup,ListGroupItem } from 'reactstrap';
+ import {Link,NavLink} from 'react-router-dom';
+ import logo from "../../assets/images/user.png";
+ const quick__links=[
+    {
+   path:"/home",
+   display:"Home",
+  },
+  {
+    path:"/about",
+    display:"About",
+   },
+   {
+    path:"/tours",
+    display:"Tours",
+   },
+  
+    
+  ];
+>>>>>>> 8fb5f05a46f18725b96e07f6c062f233f96a8348
 
 const quick__links = [
     { path: "/home", display: "Home" },
@@ -17,7 +39,36 @@ const quick__links2 = [
 ];
 
 const Footer = () => {
+<<<<<<< HEAD
     const year = new Date().getFullYear(); // Corrected new Date() spelling
+=======
+    const year= new Date().getFullYear()
+  return (
+   <footer>
+    <Container>
+        <Row>
+            <Col lg='3'>
+                <div className='logo'>
+        <img src={logo} alt=""/>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Iste accusamus officiis vitae dicta labore, itaque nihil exercitationem alias 
+            ipsum possimus omnis ab nisi aliquam animi culpa dolores tempora esse iure!
+          </p>
+          <div className="social__links d-flex align-items-center gap-4">
+  <span>
+    <Link to ="#"><i class="ri-youtube-fill"></i></Link>
+  </span>
+  <span>
+    <Link to ="#"><i class="ri-facebook-fill"></i></Link>
+  </span>
+  <span>
+    <Link to ="#"><i class="ri-instagram-line"></i></Link>
+  </span>
+  <span>
+    <Link to ="#"><i class="ri-github-fill"></i></Link>
+  </span>
+>>>>>>> 8fb5f05a46f18725b96e07f6c062f233f96a8348
 
     return (
         <footer>
